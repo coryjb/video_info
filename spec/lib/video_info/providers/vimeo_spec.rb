@@ -14,6 +14,11 @@ require 'spec_helper'
         it { is_expected.to be_truthy }
       end
 
+      context 'with Vimeo Pro url' do
+        let(:url) { 'https://vimeopro.com/buzzflixmedia/portfolio-example/video/66355482' }
+        it { is_expected.to be_truthy }
+      end
+
       context 'with Vimeo OnDemand url' do
         let(:url) { 'https://vimeo.com/ondemand/less/101677664' }
         it { is_expected.to be_truthy }
